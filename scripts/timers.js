@@ -5,7 +5,7 @@ module.exports = (robot) => {
     // Commands:
     //    hubot qual a situação dos timers da (.*)? - responde a situação
     //
-    robot.respond(/qual a situação dos timers da (.*)/, res => {
+    robot.respond(/(Q|q)ual a situação dos timers da (.*)/, res => {
         res.reply(res.match[1]);
     });
 
